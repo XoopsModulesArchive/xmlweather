@@ -1,0 +1,61 @@
+//  ------------------------------------------------------------------------ //
+//                         XOOPS XmlWeather Module 1.5	    	 	 //
+//                    Just enjoy! Internet for everyone!!			 //
+//                      wanikoo <http://www.wanisys.net/>                    //
+//  ------------------------------------------------------------------------ //
+//                         Based on Weather on your site(weather_xml.php)            //
+//                     	 ( http://notonebit.com/ )		                 //
+//  ------------------------------------------------------------------------ //
+
+
+INSTALLATION
+------------
+1. Sign up for Weather.com's free XML service at http://www.weather.com/services/xmloap.html
+
+2. Download the weather.com SDK and add all image files to this module's image folder.
+ like this:
+     xmlweather/images/93x93
+     xmlweather/images/61x61
+     xmlweather/images/31x31
+     xmlweather/images/logos
+
+3. Configure the following variables in config.php !
+- Your weather.com partner ID you received when signing up for their XML service
+define('XMLWEATHER_PID', "");
+- Your weather.com license key
+define('XMLWEATHER_KEY', "");
+- Select the size of the forecast images to use(31x31, 61x61, or 93x93)
+define('XMLWEATHER_IMGSIZE', "61x61");
+- default city (ex: Tokyo, Japan )
+define('XMLWEATHER_LOC', "JAXX0085");
+
+4. Upload all the files and folders to your webserver. 
+
+5, Go to your admin section and install this module!
+
+6, That's all! Just enjoy!!
+
+PS:
+If you set your server "allow_url_open = Off",
+this module don't work properly.
+In that case, 
+please open/edit xmlweather/include/function.php.
+( I mean you should use (//case1 or 2: for allow_url_open = off) instead of (//case3: for allow_url_open = On) )
+// case1: snoopy for allow_url_open = Off
+// case2: not snoopy and for allow_url_open = Off
+If you use XOOPS JP or XOOPS Cube Legacy, You can use both!
+but...
+in case of XOOPS, You should use case2 because its snoopy.php can't get the weather.com XML data properly!
+
+PS2:
+Umm...
+As you know, "allow_url_open = Off" is recommended!
+
+------------
+
+Demo: 
+http://kjw0815.codns.com/wanisys/japanese/xoops/html/modules/xmlweather/
+
+From wanikoo [wani@wanisys.net]
+
+the most educational site, wanisys.net [ http://www.wanisys.net  ]

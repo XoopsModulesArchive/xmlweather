@@ -1,0 +1,105 @@
+<!-- start module contents -->
+<br />
+	<table align="center" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td align="center">
+	<img src="images/biglogo.gif" width="468" height="60" border="0" alt=" " />
+	</td>
+	</tr>
+	</table>
+
+<br />
+
+<div align="center">
+<form name="weathersearch" action="index.php" method="post">
+<{$lang_xmlweather_enterdata}>: <input type="text" name="loc" size="20">&nbsp;<input type="submit" value="<{$lang_xmlweather_search}>">
+</form>
+</div>
+<br />
+
+<{if $xmlweather_detailinfo == true}>
+
+	<b><font size=4><{$lang_xmlweather_report}> <{$xmlweather_city}></font></b>
+	<br /><font size=1>(<{$lang_xmlweather_lastupdated}><{$xmlweather_last_updated}>).</font><br />
+	<table>
+	<tr>
+	<td><img border="1" src="images/93x93/<{$xmlweather_curr_icon}>.png" alt="<{$xmlweather_curr_text}>"></td>
+	<td>
+	<font size=3><{$lang_xmlweather_currently}>: <b><{$xmlweather_curr_temp}>&#730; <{$xmlweather_unit_temp}></b></font><br />
+	<{$lang_xmlweather_feellike}>: <{$xmlweather_curr_flik}>&#730; <{$xmlweather_unit_temp}><br />
+	<{$lang_xmlweather_currentconditon}>: <{$xmlweather_curr_text}><br />
+	<{$lang_xmlweather_sunrise}>: <{$xmlweather_sunrise}><br />
+	<{$lang_xmlweather_sunset}>: <{$xmlweather_sunset}><br />
+	<{$lang_xmlweather_humidity}>: <{$xmlweather_humidity}>%<br />
+	<{$lang_xmlweather_visibility}>: <{$xmlweather_visibility}> <{$xmlweather_unit_dist}><br />
+	<{$lang_xmlweather_dewpoint}>: <{$xmlweather_dewpoint}>&#176;<{$xmlweather_system}><br />
+	<{$lang_xmlweather_uvindex}>: <{$xmlweather_uvindex}> ("<{$xmlweather_uvtext}>")<br />
+	<{$lang_xmlweather_barometer}>: <{$xmlweather_barometer}><br />
+	<{$lang_xmlweather_moon}>: <{$xmlweather_moontext}><br />
+	<{$lang_xmlweather_wind}>: <{$xmlweather_wind}>
+	</td>
+	</tr>
+	</table>
+	<br />
+	<table border="1" cellspacing="0" cellpadding="4" style="border-collapse: collapse" bordercolor="#000000">
+  	<tr>
+    	<td width="9%" bgcolor="#CC99CC" align="center">
+    	<font face="Verdana" size="1">&lt;10</font></td>
+    	<td width="9%" bgcolor="#9966FF" align="center">
+    	<font face="Verdana" size="1">10's</font></td>
+    	<td width="9%" bgcolor="#3399FF" align="center">
+    	<font face="Verdana" size="1">20's</font></td>
+    	<td width="9%" bgcolor="#99CCFF" align="center">
+    	<font face="Verdana" size="1">30's</font></td>
+    	<td width="9%" bgcolor="#66CC66" align="center">
+    	<font face="Verdana" size="1">40's</font></td>
+    	<td width="9%" bgcolor="#FFFF99" align="center">
+    	<font face="Verdana" size="1">50's</font></td>
+    	<td width="9%" bgcolor="#FFCC33" align="center">
+    	<font face="Verdana" size="1">60's</font></td>
+    	<td width="9%" bgcolor="#FF9933" align="center">
+    	<font face="Verdana" size="1">70's</font></td>
+    	<td width="9%" bgcolor="#FF6600" align="center">
+    	<font face="Verdana" size="1">80's</font></td>
+    	<td width="9%" bgcolor="#FF0000" align="center">
+    	<font face="Verdana" size="1">90's</font></td>
+    	<td width="10%" bgcolor="#990000" align="center">
+    	<font face="Verdana" size="1" color="#FFFFFF">100+</font></td>
+  	</tr>
+	</table>
+
+	<{$xmlweather_detailtable}>
+	<br />
+	<div align="center">
+	<a href="<{$xmlweather_promo_link[0][1]}>" target="_blank"><{$xmlweather_promo_link[0][0]}></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="<{$xmlweather_promo_link[1][1]}>" target="_blank"><{$xmlweather_promo_link[1][0]}></a><br /><br />
+	<a href="<{$xmlweather_promo_link[2][1]}>" target="_blank"><{$xmlweather_promo_link[2][0]}></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="<{$xmlweather_promo_link[3][1]}>" target="_blank"><{$xmlweather_promo_link[3][0]}></a><br /><br />
+	</div>
+<{/if}>
+
+<{if $xmlweather_detailsearchinfo == true}>
+
+	<div align="center">
+	<{$xmlweather_detailsearch}>
+	</div>
+<{/if}>
+
+<{if $xmlweather_nomatchinfo == true}>
+
+	<div align="center">
+	<{$lang_xmlweather_nomatch}>
+	</div>
+	<br />
+
+<{/if}>
+
+<br />
+<div align="center">
+<{$lang_xmlweather_poweredby}>
+<br /><br />
+<{$lang_xmlweather_copyright}>
+</div>
+
+<br />
+<!-- end module contents -->

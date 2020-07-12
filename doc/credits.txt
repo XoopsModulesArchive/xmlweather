@@ -1,0 +1,8 @@
+//  ------------------------------------------------------------------------ //
+//                         XOOPS XmlWeather Module 1.5    	 	 //
+//                    Just enjoy! Internet for everyone!!			 //
+//                      wanikoo <http://www.wanisys.net/>                    //
+//  ------------------------------------------------------------------------ //
+//                       Original Script: Weather on your site            //
+//                     	 admin@notonebit.com ( http://notonebit.com/ )        //
+//  ------------------------------------------------------------------------ //
